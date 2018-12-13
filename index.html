@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TheHub</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    
+    
+  <style>
+	@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");h1{font-family:"Open Sans";}h1{font-weight:200;}h1{text-align:center;}h1{color:white;}h1{font-size:60pt;}body{width:100 wh;}body{height:90vh;}body{color:#fff;}body{background:linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);}body{background-size:400% 400%;}body{-webkit-animation:Gradient 15s ease infinite;}body{-moz-animation:Gradient 15s ease infinite;}body{animation:Gradient 15s ease infinite;}@-webkit-keyframes Gradient{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}@-moz-keyframes Gradient{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}@keyframes Gradient{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}#main{display:flex;}#main{height:75%;}#main{justify-content:center;}#main{align-items:center;}
+	</style>
+
+  </head>  
+  <body>
+    <!--Header-->
+		<h1>The Hub.</h1>
+    <div id="login_div" class="main-div">
+    <!--Login Form-->
+    <h3>TheHub Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <!--Shopy Items Availible For Purchase-->
+    <h3>TheHub Shop</h3>
+    <button data-shoppy-product="HaV5pvt">1 SWC</button>
+    <h3>    </h3>
+    <button data-shoppy-product="nid8gD4">2 SWC</button>
+    <h3>    </h3>
+    <button data-shoppy-product="vrspk3y">3 SWC</button>
+    <h3>    </h3>
+    <button data-shoppy-product="ckfN75b">4 SWC</button>
+    <h3>    </h3>
+    <button data-shoppy-product="E6uMIyx">5 SWC</button>
+    <h3>Official Discord</h3>
+    <iframe src="https://discordapp.com/widget?id=522074203260977163&theme=dark" width="350" height="440" allowtransparency="true" frameborder="0"></iframe>
+  </div>
+    
+    
+<!--Shows THis When Logged In-->
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to TheHub. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+    
+    
+    
+
+    
+    <!-- Begin of Chaport Live Chat code -->
+<script type="text/javascript">
+(function(w,d,v3){
+w.chaportConfig = { appId : '5c0bdc86e14dcb5b4ceabcaf' };
+
+if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
+</script>
+<!-- End of Chaport Live Chat code -->
+    
+
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCqYRWs1BToJ7UDob9ACHT23Ed0r8yyTWI",
+    authDomain: "thehub-e0358.firebaseapp.com",
+    databaseURL: "https://thehub-e0358.firebaseio.com",
+    projectId: "thehub-e0358",
+    storageBucket: "",
+    messagingSenderId: "948666806819"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+  
+  
+  <script src="https://shoppy.gg/api/embed.js"></script>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
